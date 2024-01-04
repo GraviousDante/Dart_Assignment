@@ -7,15 +7,17 @@ class Customer {
 
   factory Customer.valueFromJson(Map<String, dynamic> json) {
     return Customer(
-      id: json["id"] as int,
-      name: json["name"] as String,
-      address: json["address"] as String,
-      age: json["age"] as int
+        id: json["id"] as int,
+        name: json["name"] as String,
+        address: json["address"] as String,
+        age: json["age"] as int
     );
   }
 
-  @Override
+  @override
   String toString() {
+    // TODO: implement toString
     return "id: $id, name: $name, address: $address, age: $age";
   }
+
 }
